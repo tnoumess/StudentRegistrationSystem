@@ -23,7 +23,7 @@ public class Server extends ActionSupport implements ModelDriven, ServletContext
 		return "success";
 	}
 
-	/* (non-Javadoc )
+	/* (non-Javadoc)
 	 * @see org.apache.struts2.util.ServletContextAware#setServletContext(javax.servlet.ServletContext)
 	 */
 	@Override
