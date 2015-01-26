@@ -1,3 +1,0 @@
-Uncaught java.lang.NullPointerException exception in thread "main" in a method test.Test.main() with signature ([Ljava/lang/String;)V
-Exception in thread "main" java.lang.NullPointerException
-	at test.Test.main(Test.java:30) [file:/home/edson/workspace/StudentRegistration/build/classes/test/Test.class]

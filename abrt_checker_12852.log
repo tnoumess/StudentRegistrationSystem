@@ -1,4 +1,0 @@
-Uncaught java.lang.NullPointerException exception in thread "main" in a method ejb.business.RegisterServiceImpl.register() with signature (Lejb/domain/Student;)Ljava/lang/String;
-Exception in thread "main" java.lang.NullPointerException
-	at ejb.business.RegisterServiceImpl.register(RegisterServiceImpl.java:31) [file:/home/edson/workspace/StudentRegistration/build/classes/ejb/business/RegisterServiceImpl.class]
-	at test.Test.main(Test.java:31) [file:/home/edson/workspace/StudentRegistration/build/classes/test/Test.class]

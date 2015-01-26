@@ -8,10 +8,12 @@
 			org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
 		</filter-class>
 	</filter>
-<!--	<context-param>	
-	<param-name>org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG</param-name>
-	<param-value>/WEB-INF/tiles.xml</param-value>
-	</context-param> -->
+<context-param> 
+		<param-name>contextConfigLocation</param-name>
+	    <param-value>
+			/META-INF/persistence.xml
+				</param-value>
+	</context-param>
 	
 	<filter-mapping>
 		<filter-name>struts2</filter-name>
