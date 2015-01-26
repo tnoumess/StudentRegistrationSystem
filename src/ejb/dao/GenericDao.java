@@ -16,7 +16,8 @@ public interface GenericDao<T extends Serializable> {
 	
 	public long count();
 
-	public T create(T t);
+	public void create(T t);
+	public void createS(T t);
 
 	public void delete(Object id);
 

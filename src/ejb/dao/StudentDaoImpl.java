@@ -52,4 +52,11 @@ public class StudentDaoImpl extends GenericDaoImpl<Student> implements StudentDa
     	}
 		return true;
 	}
+	
+	@Override
+	public void create(Student student) {
+		System.out.println(this.getClass());
+		createS(student);		
+		
+	}
 }

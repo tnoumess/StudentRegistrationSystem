@@ -36,11 +36,15 @@ public abstract class GenericDaoImpl<T extends Serializable> implements GenericD
 	}
 
 	
-	public T create(final T t) {
+	public void create(final T t) {
 		em.persist(t);
-		return t;
+		
 	}
-
+	public void createS(final T t) {
+		System.out.println(this.getClass());
+		em.persist(t);
+		
+	}
 	
 	public void delete(final Object id) {
 		em.remove(em.getReference(type, id));

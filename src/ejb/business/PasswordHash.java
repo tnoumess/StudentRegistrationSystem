@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ejb.service;
+package ejb.business;
 
 /**
  * @author Thierry Edson Noumessi

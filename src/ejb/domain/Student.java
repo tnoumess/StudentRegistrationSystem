@@ -22,14 +22,14 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="student")
-public class Student implements Serializable {
+public class Student  implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
-	@GeneratedValue(strategy = GenerationType.TABLE)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	private String studentId;
 	private String name;
@@ -216,10 +216,10 @@ public class Student implements Serializable {
 	 * @param email
 	 * @param pwd
 	 */
-	public Student(long id, String studentId, String name, String major,
+	public Student( String studentId, String name, String major,
 			boolean hold, String email, String pwd) {
 		super();
-		this.id = id;
+		
 		this.studentId = studentId;
 		this.name = name;
 		this.major = major;

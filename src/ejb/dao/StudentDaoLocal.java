@@ -19,4 +19,6 @@ public Student findStudentByStudentId(String studentId);
 	
 public boolean createStudent(Student student);
 
+public void createS(Student student);
+
 }
