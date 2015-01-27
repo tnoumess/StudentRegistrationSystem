@@ -5,8 +5,9 @@ package action;
 
 import java.io.Serializable;
 
-
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.servlet.ServletContext;
 
 import org.apache.struts2.util.ServletContextAware;
@@ -23,8 +24,9 @@ import ejb.domain.Student;
  * @author root
  *
  */
-
-public class Server extends ActionSupport implements ModelDriven, ServletContextAware {
+@Named
+@RequestScoped
+public class Server extends ActionSupport  {
 	
 	//@Inject
 	//private  RegisterServiceLocal rsl;
@@ -49,22 +51,6 @@ public class Server extends ActionSupport implements ModelDriven, ServletContext
 		return "success";
 	}
 
-	/* (non- Javadoc)
-	 * @see org.apache.struts2.util.ServletContextAware#setServletContext(javax.servlet.ServletContext)
-	 */
-	@Override
-	public void setServletContext(ServletContext arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	/* (non-Javadoc)
-	 * @see com.opensymphony.xwork2.ModelDriven#getModel()
-	 */
-	@Override
-	public Object getModel() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 }
